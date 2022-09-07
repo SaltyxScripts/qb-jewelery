@@ -1,8 +1,6 @@
 Config = Config or {}
 
--- Set to true or false or GetConvar('UseTarget', 'false') == 'true' to use global option or script specific
--- These have to be a string thanks to how Convars are returned.
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
+Config.UseTarget = false
 
 Config.Timeout = 30 * (60 * 2000)
 Config.RequiredCops = 2
@@ -47,6 +45,24 @@ Config.WhitelistedWeapons = {
     [`weapon_pistol50`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_bat`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_crowbar`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_golfclub`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_katana`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_nightstick`] = {
+        ["timeOut"] = 10000
+    },
+    [`weapon_machinepistol`] = {
+        ["timeOut"] = 10000
+    },
 }
 
 Config.VitrineRewards = {
@@ -75,105 +91,145 @@ Config.VitrineRewards = {
 
 Config.Locations = {
     [1] = {
-        ["coords"] = vector3(-626.83, -235.35, 38.05),
+        ["coords"] = vector3(-627.21, -234.89, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [2] = {
-        ["coords"] = vector3(-625.81, -234.7, 38.05),
+        ["coords"] = vector3(-626.16, -234.13, 37.65),
+        ["before"] = "des_jewel_cab4_start",
+        ["after"] = "des_jewel_cab4_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [3] = {
-        ["coords"] = vector3(-626.95, -233.14, 38.05),
+        ["coords"] = vector3(-627.59, -234.37, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [4] = {
-        ["coords"] = vector3(-628.0, -233.86, 38.05),
+        ["coords"] = vector3(-626.54, -233.6, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [5] = {
-        ["coords"] = vector3(-625.7, -237.8, 38.05),
+        ["coords"] = vector3(-625.28, -238.29, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [6] = {
-        ["coords"] = vector3(-626.7, -238.58, 38.05),
-      ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["coords"] = vector3(-626.32, -239.05, 37.65),
+        ["before"] = "des_jewel_cab2_start",
+        ["after"] = "des_jewel_cab2_end",
+        ["isOpened"] = false,
+        ["isBusy"] = false
     },
     [7] = {
-        ["coords"] = vector3(-624.55, -231.06, 38.05),
+        ["coords"] = vector3(-622.62, -232.56, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [8] = {
-        ["coords"] = vector3(-623.13, -232.94, 38.05),
+        ["coords"] = vector3(-623.96, -230.73, 37.65),
+        ["before"] = "des_jewel_cab4_start",
+        ["after"] = "des_jewel_cab4_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [9] = {
-        ["coords"] = vector3(-620.29, -234.44, 38.05),
+        ["coords"] = vector3(-625.33, -227.37, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [10] = {
-        ["coords"] = vector3(-619.15, -233.66, 38.05),
+        ["coords"] = vector3(-624.28, -226.61, 37.65),
+        ["before"] = "des_jewel_cab4_start",
+        ["after"] = "des_jewel_cab4_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [11] = {
-        ["coords"] = vector3(-620.19, -233.44, 38.05),
+        ["coords"] = vector3(-623.61, -228.62, 37.65),
+        ["before"] = "des_jewel_cab2_start",
+        ["after"] = "des_jewel_cab2_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [12] = {
-        ["coords"] = vector3(-617.63, -230.58, 38.05),
+        ["coords"] = vector3(-621.52, -228.95, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [13] = {
-        ["coords"] = vector3(-618.33, -229.55, 38.05),
+        ["coords"] = vector3(-619.97, -226.2, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [14] = {
-        ["coords"] = vector3(-619.7, -230.33, 38.05),
+        ["coords"] = vector3(-619.2, -227.25, 37.65),
+        ["before"] = "des_jewel_cab2_start",
+        ["after"] = "des_jewel_cab2_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [15] = {
-        ["coords"] = vector3(-620.95, -228.6, 38.05),
+        ["coords"] = vector3(-617.85, -229.11, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [16] = {
-        ["coords"] = vector3(-619.79, -227.6, 38.05),
+        ["coords"] = vector3(-617.09, -230.16, 37.65),
+        ["before"] = "des_jewel_cab2_start",
+        ["after"] = "des_jewel_cab2_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [17] = {
-        ["coords"] = vector3(-620.42, -226.6, 38.05),
+        ["coords"] = vector3(-620.18, -230.79, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [18] = {
-        ["coords"] = vector3(-623.94, -227.18, 38.05),
+        ["coords"] = vector3(-618.8, -234.15, 37.65),
+        ["before"] = "des_jewel_cab3_start",
+        ["after"] = "des_jewel_cab3_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [19] = {
-        ["coords"] = vector3(-624.91, -227.87, 38.05),
+        ["coords"] = vector3(-619.85, -234.91, 37.65),
+        ["before"] = "des_jewel_cab_start",
+        ["after"] = "des_jewel_cab_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
+        ["isBusy"] = false
     },
     [20] = {
-        ["coords"] = vector3(-623.94, -228.05, 38.05),
+        ["coords"] = vector3(-620.52, -232.88, 37.65),
+        ["before"] = "des_jewel_cab4_start",
+        ["after"] = "des_jewel_cab4_end",
         ["isOpened"] = false,
-        ["isBusy"] = false,
-    }
+        ["isBusy"] = false
+    },
 }
 
 Config.MaleNoHandshoes = {
